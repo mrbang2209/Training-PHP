@@ -1,0 +1,20 @@
+1. Debug 
+  - Chấp nhận các giá trị 0 , 1 , 2.
+  - 0 -> Không báo lỗi hoặc cảnh báo gì ra bên ngoài
+  - 1 -> Hiển thị lỗi hoặc cảnh báo
+  - 2 -> Hiển thị lỗi, cảnh báo và câu lệnh SQL
+  - câu truy vấn sql chỉ hiện ra khi trong layout chúng ta thêm đoạn code sau:
+      <?php echo $this->element('sql_dump'); ?>
+2. Log
+  - Chấp nhận giá trị : true, false.
+  - TRUE : chấp nhận cho ghi log
+  - FALSE : không cho ghi log
+  - Lưu lỗi, cảnh báo vào file log
+3. App.baseUrl
+  - Nếu để đoạn code này thì chương trình sẽ không sử dụng mod_rewrite(là một module của Apache Web Server, cho phép viết lại địa chỉ của website)
+4.Session.start
+  - Tự động start session ( true or false).
+5. Security.salt
+  - Chuỗi ngẫu nhiên trong các hàng băm.
+6. Security.cipherSeed
+  - Chuỗi ngẫu nhiên dùng để mã hóa/giải chuỗi.
